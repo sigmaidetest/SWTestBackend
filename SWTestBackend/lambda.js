@@ -7,8 +7,9 @@ exports.handler = function (event, context, callback) {
         "isBase64Encoded": true,
         "statusCode": 200,
         "headers": {
+           "access-control-allow-origin": "*",
             "headerName": "headerValue"
         },
-        "body": JSON.stringify(event);
+        "body": JSON.stringify(event)
     });
 }
